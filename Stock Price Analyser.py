@@ -1,5 +1,3 @@
-print("One day I will master this shit!")
-
 prices = [100, 102, 101, 105, 107, 106, 110]
 
 open = prices[0]
