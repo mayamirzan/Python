@@ -1,3 +1,6 @@
+#work in progress
+
+
 def _142857():          # Magic Number: 142857 -> Multiplying by all numbers in [1, 6] gives the same dequence of numbers rotated.
     for i in range(1, 7):
         x = i * 142857
