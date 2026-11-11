@@ -40,9 +40,9 @@ def _1729():            # Magic Number: 1729 or 'Hardy- Ramanujan number' -> sma
 _1729()
 
 
-def perfectnumbers():
-
+def perfectnumbers():        #Perfect Numbers consist of integers equal to the sum of their proper divisors.
     n = 1
+    c = 0
 
     while n <= 1000:
 
@@ -53,6 +53,9 @@ def perfectnumbers():
                 xsol.append(a)
 
         if sum(xsol) == n:
+            c += 1
+            if c == 1:
+                print(f"{n} is the first Perfect Number")
             print(xsol)
             print(n)
         
