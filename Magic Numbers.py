@@ -67,9 +67,40 @@ def perfectnumbers():        #Perfect Numbers consist of integers equal to the s
 perfectnumbers()
                 
 
-print(9 + 99 + 999 + 9999 + 99999 + 999999)
+print(9 + 99 + 999 + 9999 + 99999 + 999999)     #Learnt if you add numbers of increasing number of digits (by 1 each time), with the largest number consisting of x digits, each consisting of the same single digit i (in this case i = 9), 123...x * i = the sum of i,ii,iii,...., i(x times)
 print(123456 * 9)
 
+
+
+def _1089():
+
+    x = int(input("Enter a 3 digit number with the first and last digits differing by atleast 2: "))
+
+    a = x // 100
+    b = (x - (a * 100)) // 10
+    c = (x - (a * 100) - (b * 10))
+
+    
+    if a == 0:
+        print("Please enter a 3 digit number")
+    if abs(a-c) < 2:
+            print("Please enter a number with the first and last digit differing by atleast 2")
+    else: 
+
+        xrev = c * 100 + b * 10 + a
+
+        xdiff = abs(x - xrev)
+
+        a1 = xdiff // 100
+        b1 = (xdiff - (a1 * 100)) // 10
+        c1 = (xdiff - (a1 * 100) - (b1 * 10))
+
+        xdiffrev = c1 * 100 + b1 * 10 + a1
+        xsol = xdiff + xdiffrev
+        print(xsol)
+        
+
+_1089()
 
 
 
